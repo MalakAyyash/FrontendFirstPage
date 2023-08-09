@@ -54,3 +54,8 @@ body, html {
   display: block;
   margin: auto;
 }
+/* ======================service===================== */
+.service h2{
+  display: flex;
+  justify-content: center;
+}
