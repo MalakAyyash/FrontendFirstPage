@@ -23,6 +23,9 @@ body, html {
     background-color: white;
     box-sizing: border-box;
 }
+*{
+  list-style: none;
+}
 /* ==========================navbar==================== */
 .dropdown-item:hover{
   background-color: grey !important;
@@ -32,7 +35,7 @@ body, html {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 50;
 }
 /* =============================side nav==================== */
 .side-nav{
@@ -56,6 +59,65 @@ body, html {
 }
 /* ======================service===================== */
 .service h2{
+  display: flex;
+  justify-content: center;
+}
+.service p{
+  color: #b3b3b3;
+}
+/* =====================footer======================= */
+.list-icon{
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+.list-icon i{
+  color: #3366ff;
+}
+footer p{
+  color: #b3b3b3;
+  font-size: 14px;
+}
+.list-icon .box{
+  color: #b3b3b3;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer h2{
+  font-size: 25px;
+}
+.input-group button{
+  background-color: #3366ff;
+  color: white;
+}
+footer .icons li{
+  border-radius: 100%;
+  background-color: #3366ff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+}
+.icons:nth-child(1){
+  background-color: #4267B2;
+}
+.icons :nth-child(2){
+  background-color: #1DA1F2;
+}
+.icons :nth-child(3){
+  background-color: #EA4335;
+}
+.icons :nth-child(4){
+  background-color: #E4405F;
+}
+.icons:nth-child(n) li:hover{
+  opacity: .5;
+}
+/* ========================second footer=================== */
+.second-footer{
+  background-color: black;
   display: flex;
   justify-content: center;
 }
