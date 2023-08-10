@@ -22,50 +22,88 @@ body, html {
     height: 100%;
     background-color: white;
     box-sizing: border-box;
+    background-color: #0a101e;
+    font-family: Inter,sans-serif;
 }
 *{
   list-style: none;
+}
+/* ==================header========================= */
+header{
+  background-image: url("../images/background-star.jpg");
+  width: 100%;
+  height: 100vh;
 }
 /* ==========================navbar==================== */
 .dropdown-item:hover{
   background-color: grey !important;
 }
 .navbar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
   z-index: 50;
+  background-color: #070d1b;
+  opacity: .7;
+}
+.navbar-brand{
+  background-color: #fec544;
+  border-radius: 10%;
+  display: flex;
+  margin-left: 5%;
+  justify-content: flex-start;
 }
 /* =============================side nav==================== */
-.side-nav{
-  height: 100vh;
-  background-color: white;
-}
-.side-nav .nav-link{
-  padding: 15px;
-}
-.side-nav .nav-link:hover{
-  background-color: grey !important;
+.side-nav img{
+  height: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px #fec544;
 }
 /* ================================main header================== */
 .main-header{
-  height: inherit;
+  display: flex;
+  justify-content: center;
 }
-.main-header img {
-  max-width: 85%;
-  display: block;
-  margin: auto;
+.texts{
+  margin-top: 20%;
+}
+.texts p{
+  color: #fec544;
+  font-size: 30px;
+}
+.texts h1{
+  font-size: 90px;
+  font-family:sans-serif;
+  font-weight: 700;
+  width: 50%;
+}
+.texts .btn{
+  color: black;
+  background-color: #fec544;
 }
 /* ======================service===================== */
 .service h2{
+  color: #fec544;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.service .col{
+  border: 1px solid #232935;
+  background-color: #101624;  
+}
+.service .text h2{
   display: flex;
   justify-content: center;
+  color: white;
+}
+.service .text h2:hover{
+  color: #fec544;
 }
 .service p{
   color: #b3b3b3;
 }
 /* =====================footer======================= */
+.footer1{
+background-color: #070d1b;
+}
 .list-icon{
   display: flex;
   justify-content: start;
@@ -87,10 +125,12 @@ footer p{
 }
 footer h2{
   font-size: 25px;
+  color: #fec544;
 }
 .input-group button{
-  background-color: #3366ff;
+  background-color:#fec544;
   color: white;
+  border-color: #fec544 ;
 }
 footer .icons li{
   border-radius: 100%;
@@ -117,7 +157,7 @@ footer .icons li{
 }
 /* ========================second footer=================== */
 .second-footer{
-  background-color: black;
+  background-color: #0a101e;
   display: flex;
   justify-content: center;
 }
