@@ -45,28 +45,53 @@ header{
 }
 .navbar-brand{
   background-color: #fec544;
-  border-radius: 10%;
+  border-radius: 20px;
   display: flex;
   margin-left: 5%;
   justify-content: flex-start;
 }
+.dropdown-menu {
+  display: none;
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 15%;
+  transform: translateX(-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: #fec544 transparent transparent transparent;
+}
 /* =============================side nav==================== */
 .side-nav img{
-  height: 50%;
-  object-fit: cover;
   box-shadow: 0 0 10px #fec544;
 }
 /* ================================main header================== */
 .main-header{
   display: flex;
   justify-content: center;
+  height: 100vh;
+}
+.main-header0{
+height: 100vh;
+}
+.side-nav{
+  height: 100vh;
 }
 .texts{
-  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .texts p{
   color: #fec544;
-  font-size: 30px;
+  font-size: 40px;
+
 }
 .texts h1{
   font-size: 90px;
@@ -100,6 +125,13 @@ header{
 .service p{
   color: #b3b3b3;
 }
+.service img {
+  text-align: center;
+}
+.service .image{
+  display: flex;
+  justify-content: center;
+}
 /* =====================footer======================= */
 .footer1{
 background-color: #070d1b;
@@ -108,9 +140,6 @@ background-color: #070d1b;
   display: flex;
   justify-content: start;
   align-items: baseline;
-}
-.list-icon i{
-  color: #3366ff;
 }
 footer p{
   color: #b3b3b3;
@@ -132,27 +161,30 @@ footer h2{
   color: white;
   border-color: #fec544 ;
 }
-footer .icons li{
-  border-radius: 100%;
-  background-color: #3366ff;
-  width: 35px;
-  height: 35px;
-  display: flex;
-  align-items: center;
+.iconss{
+  padding: 0;
 }
-.icons:nth-child(1){
+footer .iconss a{
+  border-radius: 100%;
+  padding: 12px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.facebook a{
   background-color: #4267B2;
 }
-.icons :nth-child(2){
+.twitter a{
   background-color: #1DA1F2;
 }
-.icons :nth-child(3){
+.google a{
   background-color: #EA4335;
 }
-.icons :nth-child(4){
+.instagram a{
   background-color: #E4405F;
 }
-.icons:nth-child(n) li:hover{
+.iconss:nth-child(n) li:hover{
   opacity: .5;
 }
 /* ========================second footer=================== */
@@ -160,4 +192,19 @@ footer .icons li{
   background-color: #0a101e;
   display: flex;
   justify-content: center;
+}
+/* =====================media query========================= */
+@media only screen and (max-width: 850px) {
+  .side-nav img{
+    visibility: hidden;
+  }
+}
+  @media only screen and (max-width: 500px) {
+  .texts p{
+    padding-left: 10%;
+  
+  } 
+  .texts h1{
+    font-size: 70px;
+  }
 }
