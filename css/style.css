@@ -41,7 +41,6 @@ header{
 .navbar{
   z-index: 50;
   background-color: #070d1b;
-  opacity: .7;
 }
 .navbar-brand{
   background-color: #fec544;
